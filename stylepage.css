@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-right: 15%;
+    margin-left: 5%;
+   
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #969696;
+}
+
+.logo img {
+    height: 40px; /* 로고 이미지 크기 조정 */
+}
+
+
+.side-navbar {
+    position: fixed;
+    top: 60%; /* 화면 중간에 위치 */
+    right: 30px; /* 오른쪽 여백 */
+    transform: translateY(-50%); /* 세로 중앙 정렬 */
+    width: 100px; /* 작은 너비 */
+    background-color: #dfdfdf;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.side-navbar a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.side-navbar a:hover {
+    background-color: #969696;
+}
+
+/* 페이지 내용 */
+.content {
+    margin-top: 100px;
+    margin-right: 80px; /* 세로 네비게이션 바 너비 만큼 여백 추가 */
+    margin-left: 5%;
+    padding: 20px;
+}
+
+.content h5{
+    margin-top: 20px;
+}
+
+.text {
+    margin-right: 80px; /* 세로 네비게이션 바 너비 만큼 여백 추가 */
+    margin-left: 20%;
+    
+    margin-top: 50px;
+}
+
+.fixed-img {
+    width: 500px;
+    height: auto; /* 비율 유지하면서 높이 자동 조정 */
+    max-width: 100%; /* 부모 요소의 크기보다 커지지 않도록 설정 */
+}
+
+
+
+.ttext {
+    max-width: 600px; /* 텍스트의 최대 너비 설정 */
+    margin-left: 400px;
+}
+
+hr {
+    margin-left: 10%;
+    
+   
+}
+
+.image-container img {
+    width: 80%; /* 이미지 크기를 30%로 설정 */
+    height: auto; /* 비율에 맞게 자동 크기 조정 */
+
+}
+
+.image-container-box {
+    border-style: dashed;
+    padding: 40px;
+    padding-left: 20px;
+    margin-left: 40px;
+    
+}
+
+.page-container {
+    width: 1000px;
+    height: 700px;
+    border: 2px solid #333;
+    position: relative;
+    overflow: hidden; /* 넘칠 경우 숨기기 */
+   
+    margin-left: 15%;
+    
+  }
+
+  /* 페이지를 담는 박스 */
+  .pages {
+    width:  2900px;
+    height: 700px;
+    display: flex;
+    transition: transform 0.5s ease; /* 페이지 전환 애니메이션 */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    
+  }
+
+    /* 각 페이지 스타일 */
+    .page {
+        min-width: 900px; /* 각 페이지의 너비 */
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-right: 50px;
+      }
+
+
+          /* 동영상 스타일 */
+    .video {
+        width: 100%;
+        height: 80%;
+        margin-bottom: 20px; /* 동영상과 텍스트 사이의 간격 */
+      }
+      
+  
+      /* 텍스트 스타일 */
+      .page-text {
+        font-size: 16px;
+        text-align: center;
+      }
+  
+      /* 버튼 스타일 */
+      .button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
